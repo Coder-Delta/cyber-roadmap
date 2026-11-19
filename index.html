@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f7fb">
+<title>Cybersecurity Learning Roadmap</title>
+<style>
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#172033;--muted:#65718a;--line:#e5eaf2;--blue:#315efb;--blue2:#eaf0ff;--green:#16865b;--shadow:0 12px 34px rgba(28,44,78,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:#2455d6;text-decoration:none}a:hover{text-decoration:underline}
+.top{background:linear-gradient(125deg,#eef3ff,#f8fbff 55%,#eaf8f2);border-bottom:1px solid var(--line)}
+.wrap{max-width:1120px;margin:auto;padding:28px 22px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:35px}
+.brand{font-weight:800;letter-spacing:-.03em}.pill{font-size:12px;font-weight:700;color:#3154b8;background:#e6edff;padding:6px 10px;border-radius:999px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-.045em;margin:0 0 14px;max-width:760px}
+.lead{color:var(--muted);max-width:720px;font-size:17px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;max-width:650px}
+.stat{background:#ffffffc9;border:1px solid #e2e9f5;border-radius:14px;padding:13px 15px}.stat strong{display:block;font-size:23px;letter-spacing:-.04em}.stat span{font-size:12px;color:var(--muted)}
+main{max-width:1120px;margin:26px auto;padding:0 22px 60px}
+.toolbar{position:sticky;top:0;z-index:5;background:#f5f7fbeF;backdrop-filter:blur(12px);padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:210px;border:1px solid var(--line);border-radius:11px;padding:11px 13px;background:white;font:inherit;color:var(--ink)}
+button,.filter{border:1px solid var(--line);background:white;color:var(--ink);border-radius:10px;padding:10px 13px;font:600 13px inherit;cursor:pointer}
+button:hover,.filter:hover{border-color:#aabaf4;background:#f9faff}.filter.active{background:var(--blue2);border-color:#cbd7ff;color:#244bc3}
+.progressbox{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;margin:18px 0 24px;box-shadow:var(--shadow)}
+.progressline{display:flex;justify-content:space-between;gap:10px;font-size:13px;font-weight:700;margin-bottom:9px}.track{height:9px;background:#edf0f6;border-radius:20px;overflow:hidden}.bar{height:100%;width:0;background:linear-gradient(90deg,#315efb,#28a879);border-radius:20px;transition:width .25s}
+.phase{background:var(--panel);border:1px solid var(--line);border-radius:17px;margin:14px 0;box-shadow:var(--shadow);overflow:hidden}
+.phasehead{display:flex;align-items:center;gap:13px;padding:17px 19px;cursor:pointer;list-style:none}.phasehead::-webkit-details-marker{display:none}
+.num{width:36px;height:36px;display:grid;place-items:center;background:var(--blue2);color:#3154c5;border-radius:11px;font-weight:800;flex:none}
+.phasetitle{font-size:17px;font-weight:800;letter-spacing:-.02em}.phasehint{font-size:12px;color:var(--muted)}.chev{margin-left:auto;color:#8490a5;transition:transform .2s}details[open] .chev{transform:rotate(180deg)}
+.content{padding:0 19px 18px;border-top:1px solid #f0f2f6}
+.topicgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.topic{border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fff;min-width:0}
+.topic-top{display:flex;gap:9px;align-items:flex-start}.topic input{margin:4px 0 0;accent-color:var(--blue);width:16px;height:16px;flex:none}
+.topic label{font-weight:700;cursor:pointer}.topic p{margin:5px 0 8px 25px;color:var(--muted);font-size:12px}
+.links{margin-left:25px;display:flex;gap:7px 12px;flex-wrap:wrap;font-size:12px;font-weight:650}.links a:after{content:" ↗";font-size:10px}
+.resources{margin:20px 0 24px}.sectiontitle{font-size:21px;letter-spacing:-.03em;margin:0 0 5px}.sub{color:var(--muted);margin:0 0 14px;font-size:13px}
+.resourcegrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.resource{background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.resource b{display:block;margin-bottom:5px}.resource p{font-size:12px;color:var(--muted);margin:0 0 10px}.resource a{font-size:12px;font-weight:700}
+.note{background:#fff8e8;border:1px solid #f1dfb5;color:#70531b;border-radius:12px;padding:13px 15px;font-size:13px;margin-top:18px}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:28px 15px}
+.hidden{display:none!important}
+@media(max-width:760px){.topicgrid,.resourcegrid{grid-template-columns:1fr}.wrap{padding:22px 17px}.stats{gap:8px}.stat{padding:10px}.stat strong{font-size:19px}main{padding:0 15px 40px}.phasehead{padding:14px}.content{padding:0 13px 14px}.toolbar{top:0}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="nav"><div class="brand">LEARN / CYBER</div><span class="pill">FREE LEARNING TRACK</span></div>
+  <h1>Cybersecurity, step by step.</h1>
+  <p class="lead">An interactive roadmap based on your uploaded cybersecurity roadmap. Learn the foundations first, practise in legal labs, and track your progress as you go.</p>
+  <div class="stats">
+    <div class="stat"><strong id="totalCount">0</strong><span>learning checkpoints</span></div>
+    <div class="stat"><strong id="doneCount">0</strong><span>completed</span></div>
+    <div class="stat"><strong id="percentCount">0%</strong><span>overall progress</span></div>
+  </div>
+</div></header>
+<main>
+  <div class="toolbar">
+    <input id="search" class="search" type="search" placeholder="Search topics, tools or concepts…" aria-label="Search roadmap">
+    <button id="allBtn" class="filter active">All topics</button>
+    <button id="todoBtn" class="filter">Not completed</button>
+    <button id="doneBtn" class="filter">Completed</button>
+    <button id="expandBtn">Expand all</button>
+    <button id="resetBtn">Reset progress</button>
+  </div>
+  <section class="progressbox" aria-label="Learning progress">
+    <div class="progressline"><span>Your learning progress</span><span id="progressText">0 of 0 completed</span></div>
+    <div class="track"><div class="bar" id="progressBar"></div></div>
+  </section>
+  <div id="roadmap"></div>
+
+  <section class="resources">
+    <h2 class="sectiontitle">Best free learning platforms</h2>
+    <p class="sub">Start with these primary resources. Some platforms also offer optional paid content; the linked learning material includes free access.</p>
+    <div class="resourcegrid">
+      <article class="resource"><b>Professor Messer</b><p>Clear video courses for IT fundamentals, A+ and Network+.</p><a href="https://www.professormesser.com/" target="_blank" rel="noopener">Free courses ↗</a></article>
+      <article class="resource"><b>Linux Journey</b><p>Linux basics, command line, permissions and system concepts.</p><a href="https://linuxjourney.com/" target="_blank" rel="noopener">Learn Linux ↗</a></article>
+      <article class="resource"><b>Cisco Networking Academy</b><p>Networking and introductory cybersecurity learning.</p><a href="https://www.netacad.com/" target="_blank" rel="noopener">Cisco courses ↗</a></article>
+      <article class="resource"><b>PortSwigger Web Security Academy</b><p>Hands-on web security lessons and interactive labs.</p><a href="https://portswigger.net/web-security" target="_blank" rel="noopener">Free web security labs ↗</a></article>
+      <article class="resource"><b>picoCTF</b><p>Beginner-friendly CTF practice from Carnegie Mellon University.</p><a href="https://picoctf.org/" target="_blank" rel="noopener">Practice CTF ↗</a></article>
+      <article class="resource"><b>OverTheWire: Bandit</b><p>Learn Linux and terminal skills through security challenges.</p><a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener">Start Bandit ↗</a></article>
+      <article class="resource"><b>CyberDefenders</b><p>Blue-team investigation, SOC and incident-response labs.</p><a href="https://cyberdefenders.org/" target="_blank" rel="noopener">Blue-team labs ↗</a></article>
+      <article class="resource"><b>MITRE ATT&amp;CK</b><p>Understand real-world adversary tactics and techniques.</p><a href="https://attack.mitre.org/" target="_blank" rel="noopener">Explore ATT&amp;CK ↗</a></article>
+      <article class="resource"><b>AWS Skill Builder</b><p>Cloud fundamentals, identity, infrastructure and security.</p><a href="https://skillbuilder.aws/" target="_blank" rel="noopener">AWS learning ↗</a></article>
+    </div>
+    <div class="note"><b>Safe practice:</b> Only scan, test or exploit systems you own or have explicit permission to assess. Use intentionally vulnerable labs for offensive-security practice.</div>
+  </section>
+</main>
+<footer>Progress is saved in this browser using local storage. No account or server is required.</footer>
+<script>
+const phases = [
+{title:"IT fundamentals",hint:"Understand computers before securing them.",topics:[
+["Computer hardware components","CPU, RAM, storage, motherboard, peripherals and how components interact.",[["Professor Messer A+","https://www.professormesser.com/"]]],
+["Connection types","NFC, Bluetooth, Wi-Fi, infrared and their common uses.",[["Cisco Networking Academy","https://www.netacad.com/"]]],
+["Popular software suites","Understand common productivity and collaboration suites such as Microsoft 365, Google Workspace and iCloud.",[["Microsoft Learn","https://learn.microsoft.com/training/"],["Google Workspace Learning Center","https://support.google.com/a/users/"]]],
+["Operating systems overview","Windows, Linux and macOS: installation, configuration, versions, GUI/CLI, permissions, software installation, files and troubleshooting.",[["Linux Journey","https://linuxjourney.com/"],["Microsoft Learn","https://learn.microsoft.com/training/"]]],
+["OS-independent troubleshooting","Build a repeatable process: identify the problem, form a hypothesis, test, resolve and document.",[["CompTIA A+ objectives","https://www.comptia.org/certifications/a"]]]
+]},
+{title:"Networking foundations",hint:"The most important foundation for cybersecurity.",topics:[
+["Networking basics and devices","LAN, WAN, WLAN, MAN; routers, switches, access points, firewalls and VPNs.",[["Professor Messer Network+","https://www.professormesser.com/get-network-plus-certified/"],["Cisco Networking Academy","https://www.netacad.com/"]]],
+["OSI model and TCP/IP","Understand layers, encapsulation and how data moves across networks.",[["Cloudflare Learning","https://www.cloudflare.com/learning/network-layer/what-is-the-osi-model/"]]],
+["IP addressing and subnetting","IPv4, public/private IPs, localhost, loopback, CIDR, subnet masks, gateways and basic IPv6.",[["Subnetting practice","https://subnetipv4.com/"],["Practical Networking","https://www.practicalnetworking.net/"]]],
+["Core network services","DNS, DHCP, NTP, IPAM, ARP, NAT, VLANs and DMZs.",[["Professor Messer Network+","https://www.professormesser.com/get-network-plus-certified/"]]],
+["Ports and protocols","HTTP/HTTPS, SSH, RDP, FTP/SFTP, SMTP, DNS, DHCP, TLS and common port numbers.",[["IANA service names and ports","https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"],["Cloudflare Learning","https://www.cloudflare.com/learning/"]]],
+["Network topologies","Star, ring, mesh and bus topologies; understand their strengths and weaknesses.",[["Cisco Networking Academy","https://www.netacad.com/"]]],
+["Network troubleshooting commands","ping, ipconfig/ip, traceroute/tracert, dig, nslookup, netstat/ss, arp and route.",[["Linux man-pages","https://man7.org/linux/man-pages/"],["Microsoft command reference","https://learn.microsoft.com/windows-server/administration/windows-commands/windows-commands"]]],
+["Packet analysis and scanning","Understand packet sniffers, port scanners, protocol analysers and troubleshooting tools.",[["Wireshark documentation","https://www.wireshark.org/docs/"],["Nmap book","https://nmap.org/book/"]]],
+["Authentication protocols","Kerberos, RADIUS, LDAP, SSO, local authentication, certificates and SSH.",[["Microsoft Learn","https://learn.microsoft.com/training/"],["OpenLDAP documentation","https://www.openldap.org/doc/"]]],
+["NAS and SAN","Understand network-attached storage and storage area networks.",[["Red Hat storage documentation","https://docs.redhat.com/"]]]
+]},
+{title:"Virtualization and lab setup",hint:"Build safe, isolated practice environments.",topics:[
+["Virtualization fundamentals","Host OS, guest OS, virtual machines and hypervisors.",[["VirtualBox manual","https://www.virtualbox.org/manual/"]]],
+["Virtualization platforms","VirtualBox, VMware, Proxmox and ESXi: understand their roles and differences.",[["Proxmox documentation","https://pve.proxmox.com/pve-docs/"],["VirtualBox manual","https://www.virtualbox.org/manual/"]]],
+["Build a safe lab","Use snapshots, host-only networking and intentionally vulnerable machines; avoid exposing lab targets to the public internet.",[["OWASP Juice Shop","https://owasp.org/www-project-juice-shop/"],["Metasploitable 2","https://docs.rapid7.com/metasploit/metasploitable-2/"]]]
+]},
+{title:"Cybersecurity core concepts",hint:"Learn the language and principles of security.",topics:[
+["CIA triad and security principles","Confidentiality, integrity, availability, least privilege, defence in depth and zero trust.",[["NIST Cybersecurity Framework","https://www.nist.gov/cyberframework"],["CISA Zero Trust Maturity Model","https://www.cisa.gov/zero-trust-maturity-model"]]],
+["Risk and governance","Risk definition, risk assessment, compliance, auditors, stakeholders, HR, legal and management roles.",[["NIST Risk Management Framework","https://csrc.nist.gov/projects/risk-management/about-rmf"]]],
+["Security teams and operations","Blue team, red team, purple team, runbooks, security operations and incident ownership.",[["NIST NICE Framework","https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center"]]],
+["Threat intelligence and hunting","Threat intelligence, OSINT, threat hunting, honeypots and threat classification.",[["MITRE ATT&CK","https://attack.mitre.org/"],["CISA Cybersecurity Advisories","https://www.cisa.gov/news-events/cybersecurity-advisories"]]],
+["Threat models and attack lifecycle","Cyber Kill Chain, Diamond Model, MITRE ATT&CK, APTs, known/unknown threats and zero-days.",[["MITRE ATT&CK","https://attack.mitre.org/"],["Lockheed Martin Cyber Kill Chain","https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html"]]],
+["Security testing concepts","False/true positives and negatives, rules of engagement, vulnerability management and responsible disclosure.",[["OWASP Testing Guide","https://owasp.org/www-project-web-security-testing-guide/"]]],
+["Authentication and access control","MFA/2FA, authentication vs authorization, ACLs, NAC, EAP/PEAP, local and central authentication.",[["OWASP Authentication Cheat Sheet","https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html"]]],
+["Backups, resiliency and isolation","Backup strategies, recovery, sandboxing, isolation, segmentation and jump servers.",[["CISA StopRansomware","https://www.cisa.gov/stopransomware"]]]
+]},
+{title:"Cryptography and secure communications",hint:"Know what protects data, identities and connections.",topics:[
+["Hashing and salting","Understand hashes, password storage, salts and why hashing is not encryption.",[["OWASP Password Storage Cheat Sheet","https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"]]],
+["Symmetric and asymmetric encryption","Private/public keys, encryption, decryption, digital signatures and key exchange.",[["CryptoHack","https://cryptohack.org/"],["Cryptography overview","https://www.cloudflare.com/learning/ssl/what-is-encryption/"]]],
+["PKI and certificates","Certificate authorities, certificate chains, local trust, TLS certificates and revocation.",[["Let's Encrypt documentation","https://letsencrypt.org/docs/"],["Cloudflare SSL/TLS","https://www.cloudflare.com/learning/ssl/what-is-ssl/"]]],
+["Secure vs insecure protocols","Compare FTP/SFTP, HTTP/HTTPS, SSL/TLS, IPsec, DNSSEC, LDAPS, SRTP and S/MIME.",[["OWASP Transport Layer Security Cheat Sheet","https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html"],["IANA ports registry","https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"]]]
+]},
+{title:"Attacks, vulnerabilities and web security",hint:"Understand attack mechanics and how to prevent them.",topics:[
+["Social engineering","Phishing, vishing, whaling, smishing, spam, shoulder surfing, tailgating and dumpster diving.",[["CISA Secure Our World","https://www.cisa.gov/secure-our-world"],["OWASP","https://owasp.org/"]]],
+["Common network attacks","DoS/DDoS, MITM, spoofing, DNS poisoning, evil twin, deauthentication, replay and rogue access points.",[["Cloudflare Learning Center","https://www.cloudflare.com/learning/"],["MITRE ATT&CK","https://attack.mitre.org/"]]],
+["Web application attacks","SQL injection, XSS, CSRF, directory traversal, authentication flaws and access-control issues.",[["PortSwigger Web Security Academy","https://portswigger.net/web-security"],["OWASP Top 10","https://owasp.org/www-project-top-ten/"]]],
+["Wireless and network security","WEP/WPA/WPA2/WPA3, WPS, VLAN hopping, port blocking and network segmentation.",[["Cisco Networking Academy","https://www.netacad.com/"],["Wi-Fi Alliance security","https://www.wi-fi.org/"]]],
+["Malware and exploitation concepts","Virus, worm, trojan, ransomware, buffer overflow, memory leak, privilege escalation, pass-the-hash and zero-day.",[["MITRE ATT&CK","https://attack.mitre.org/"],["CISA Malware","https://www.cisa.gov/"]]],
+["Security misconfiguration and hardening","Patching, permissions, Group Policy, endpoint protection, antivirus, antimalware, EDR and DLP.",[["CIS Benchmarks","https://www.cisecurity.org/cis-benchmarks"],["Microsoft Security documentation","https://learn.microsoft.com/security/"]]]
+]},
+{title:"Security tools and frameworks",hint:"Learn what tools do before using them.",topics:[
+["Reconnaissance and network tools","Nmap, ping, dig, arp, curl, traceroute, hping and WHOIS.",[["Nmap reference guide","https://nmap.org/book/"],["curl documentation","https://curl.se/docs/"]]],
+["Packet and protocol analysis","Wireshark, tcpdump and packet captures.",[["Wireshark docs","https://www.wireshark.org/docs/"],["tcpdump manual","https://www.tcpdump.org/manpages/tcpdump.1.html"]]],
+["Forensics tools","Autopsy, FTK Imager, WinHex concepts and memory-dump analysis.",[["Autopsy","https://www.autopsy.com/"],["FTK Imager","https://www.exterro.com/digital-forensics-software/ftk-imager"]]],
+["Threat analysis services","VirusTotal, urlscan.io, ANY.RUN, Joe Sandbox and URLVoid; understand safe handling of suspicious files.",[["VirusTotal","https://www.virustotal.com/"],["urlscan.io","https://urlscan.io/"],["ANY.RUN","https://any.run/"]]],
+["Security distributions","Understand Kali Linux and Parrot OS as tool collections, not substitutes for fundamentals.",[["Kali documentation","https://www.kali.org/docs/"],["Parrot documentation","https://parrotsec.org/docs/"]]],
+["Security standards","ISO, NIST, CIS Controls, CSF and RMF: know why standards and controls exist.",[["NIST CSF","https://www.nist.gov/cyberframework"],["CIS Controls","https://www.cisecurity.org/controls"],["ISO 27001 overview","https://www.iso.org/standard/27001"]]],
+["Living-off-the-land references","LOLBAS, GTFOBins and WADComs: learn how legitimate system tools can be misused and detected.",[["LOLBAS","https://lolbas-project.github.io/"],["GTFOBins","https://gtfobins.github.io/"],["WADComs","https://wadcoms.github.io/"]]],
+["Logs and monitoring","Windows Event Logs, syslog, NetFlow, firewall logs and packet captures.",[["Windows event documentation","https://learn.microsoft.com/windows/security/"],["Graylog resources","https://graylog.org/"]]]
+]},
+{title:"Incident response and digital forensics",hint:"Learn to investigate, contain and recover.",topics:[
+["Incident response lifecycle","Preparation, identification, containment, eradication, recovery and lessons learned.",[["NIST SP 800-61","https://csrc.nist.gov/pubs/sp/800/61/r2/final"],["CISA incident response","https://www.cisa.gov/"]]],
+["Digital forensics fundamentals","Evidence handling, chain of custody, disk images, memory and basic forensic workflow.",[["Autopsy training","https://www.autopsy.com/support/"],["NIST Forensics","https://www.nist.gov/digital-evidence"]]],
+["Threat hunting and SOC investigations","Triage alerts, inspect logs, build timelines and document findings.",[["CyberDefenders","https://cyberdefenders.org/"],["Blue Team Labs Online","https://blueteamlabs.online/"]]]
+]},
+{title:"Cloud security",hint:"Understand cloud services and shared responsibility.",topics:[
+["Cloud service models","SaaS, PaaS, IaaS; public, private and hybrid cloud.",[["AWS Cloud Essentials","https://skillbuilder.aws/"],["Microsoft Azure fundamentals","https://learn.microsoft.com/training/azure/"]]],
+["Cloud vs on-premises","Shared responsibility, deployment trade-offs, identity, networking and data protection.",[["AWS shared responsibility","https://aws.amazon.com/compliance/shared-responsibility-model/"]]],
+["Cloud infrastructure and storage","AWS, Azure, GCP, S3, Google Drive, OneDrive, Dropbox and object storage concepts.",[["AWS S3 docs","https://docs.aws.amazon.com/s3/"],["Google Cloud learning","https://cloud.google.com/learn"]]],
+["Infrastructure as Code and serverless","Understand IaC, automation, serverless architecture and secure deployment workflows.",[["Terraform tutorials","https://developer.hashicorp.com/terraform/tutorials"],["AWS serverless","https://aws.amazon.com/serverless/"]]]
+]},
+{title:"Programming and scripting",hint:"Build enough coding skill to automate and understand systems.",topics:[
+["Python","Variables, functions, files, HTTP requests, sockets, parsing and automation.",[["Official Python tutorial","https://docs.python.org/3/tutorial/"]]],
+["Bash and Linux shell","Pipes, redirection, grep, sed, awk, permissions and shell scripts.",[["GNU Bash manual","https://www.gnu.org/software/bash/manual/"],["ShellCheck","https://www.shellcheck.net/"]]],
+["PowerShell","Cmdlets, pipelines, objects, scripts and Windows administration.",[["Microsoft PowerShell learning","https://learn.microsoft.com/powershell/"]]],
+["C/C++ basics","Memory, pointers, processes and low-level concepts useful for understanding vulnerabilities.",[["Learn C++","https://www.learncpp.com/"]]],
+["Go and JavaScript (optional)","Useful for tooling, automation, web applications and understanding application security.",[["Go Tour","https://go.dev/tour/"],["MDN JavaScript","https://developer.mozilla.org/docs/Web/JavaScript"]]]
+]},
+{title:"CTF practice and portfolio",hint:"Apply concepts in intentionally designed training environments.",topics:[
+["Beginner CTFs","Start with picoCTF and OverTheWire Bandit; write notes for every challenge.",[["picoCTF","https://picoctf.org/"],["OverTheWire Bandit","https://overthewire.org/wargames/bandit/"]]],
+["Guided learning labs","Use free rooms and labs on TryHackMe, PortSwigger and Hack The Box Academy.",[["TryHackMe","https://tryhackme.com/"],["PortSwigger Academy","https://portswigger.net/web-security"],["HTB Academy","https://academy.hackthebox.com/"]]],
+["Blue-team challenges","Practise investigation, packet analysis, SIEM concepts and incident triage.",[["CyberDefenders","https://cyberdefenders.org/"],["Blue Team Labs Online","https://blueteamlabs.online/"]]],
+["Build a public learning portfolio","Publish lab write-ups without exposing flags, credentials, private data or solutions where prohibited; document tools, methodology and lessons.",[["GitHub Skills","https://skills.github.com/"],["OWASP project resources","https://owasp.org/"]]]
+]}
+];
+
+const root=document.getElementById('roadmap');
+const storageKey='cyber-roadmap-progress-v1';
+let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(e){}
+let filter='all';
+function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+let total=0;
+phases.forEach((phase,i)=>{
+ const details=document.createElement('details');details.className='phase';details.open=i<2;
+ const summary=document.createElement('summary');summary.className='phasehead';
+ summary.innerHTML=`<span class="num">${String(i+1).padStart(2,'0')}</span><span><span class="phasetitle">${phase.title}</span><br><span class="phasehint">${phase.hint}</span></span><span class="chev">⌄</span>`;
+ details.appendChild(summary);
+ const content=document.createElement('div');content.className='content';
+ const grid=document.createElement('div');grid.className='topicgrid';
+ phase.topics.forEach((topic,j)=>{
+  total++;const id=`${i}-${j}-${slug(topic[0])}`;
+  const card=document.createElement('article');card.className='topic';card.dataset.search=(topic[0]+' '+topic[1]+' '+topic[2].map(x=>x[0]).join(' ')).toLowerCase();card.dataset.id=id;
+  const top=document.createElement('div');top.className='topic-top';
+  const cb=document.createElement('input');cb.type='checkbox';cb.id=id;cb.checked=!!saved[id];cb.setAttribute('aria-label','Mark '+topic[0]+' completed');
+  cb.addEventListener('change',()=>{saved[id]=cb.checked;localStorage.setItem(storageKey,JSON.stringify(saved));update()});
+  const label=document.createElement('label');label.htmlFor=id;label.textContent=topic[0];
+  top.append(cb,label);card.appendChild(top);
+  const desc=document.createElement('p');desc.textContent=topic[1];card.appendChild(desc);
+  const links=document.createElement('div');links.className='links';
+  topic[2].forEach(([name,url])=>{const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=name;links.appendChild(a)});
+  card.appendChild(links);grid.appendChild(card);
+ });
+ content.appendChild(grid);details.appendChild(content);root.appendChild(details);
+});
+document.getElementById('totalCount').textContent=total;
+function update(){
+ const checks=[...document.querySelectorAll('.topic input')];const done=checks.filter(x=>x.checked).length;const pct=Math.round(done/total*100);
+ document.getElementById('doneCount').textContent=done;document.getElementById('percentCount').textContent=pct+'%';document.getElementById('progressText').textContent=`${done} of ${total} completed`;document.getElementById('progressBar').style.width=pct+'%';
+ applyFilter();
+}
+function applyFilter(){
+ const q=document.getElementById('search').value.trim().toLowerCase();
+ document.querySelectorAll('.phase').forEach(phase=>{
+  let visible=0;phase.querySelectorAll('.topic').forEach(card=>{
+   const checked=card.querySelector('input').checked;
+   const matchText=!q||card.dataset.search.includes(q);
+   const matchFilter=filter==='all'||(filter==='done'&&checked)||(filter==='todo'&&!checked);
+   const show=matchText&&matchFilter;card.classList.toggle('hidden',!show);if(show)visible++;
+  });
+  phase.classList.toggle('hidden',visible===0);
+ });
+}
+document.getElementById('search').addEventListener('input',applyFilter);
+[['allBtn','all'],['todoBtn','todo'],['doneBtn','done']].forEach(([id,val])=>document.getElementById(id).addEventListener('click',()=>{filter=val;document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');applyFilter()}));
+let expanded=false;document.getElementById('expandBtn').addEventListener('click',()=>{expanded=!expanded;document.querySelectorAll('.phase').forEach(x=>{if(!x.classList.contains('hidden'))x.open=expanded});document.getElementById('expandBtn').textContent=expanded?'Collapse all':'Expand all'});
+document.getElementById('resetBtn').addEventListener('click',()=>{if(confirm('Reset all saved roadmap progress on this browser?')){saved={};localStorage.removeItem(storageKey);document.querySelectorAll('.topic input').forEach(x=>x.checked=false);update()}});
+update();
+</script>
+</body>
+</html>
