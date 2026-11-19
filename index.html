@@ -41,11 +41,108 @@ button:hover,.filter:hover{border-color:#aabaf4;background:#f9faff}.filter.activ
 footer{color:var(--muted);font-size:12px;text-align:center;padding:28px 15px}
 .hidden{display:none!important}
 @media(max-width:760px){.topicgrid,.resourcegrid{grid-template-columns:1fr}.wrap{padding:22px 17px}.stats{gap:8px}.stat{padding:10px}.stat strong{font-size:19px}main{padding:0 15px 40px}.phasehead{padding:14px}.content{padding:0 13px 14px}.toolbar{top:0}}
+
+:root[data-theme="dark"]{
+ --bg:#101521;--panel:#171f2e;--ink:#e8edf7;--muted:#a0abc0;--line:#2b3548;
+ --blue:#8da7ff;--blue2:#222f50;--green:#54c99a;--shadow:0 12px 34px rgba(0,0,0,.20)
+}
+:root[data-theme="dark"] .top{background:linear-gradient(125deg,#18233a,#17202d 55%,#142a27);border-color:var(--line)}
+:root[data-theme="dark"] .stat{background:#1a2434;border-color:var(--line)}
+:root[data-theme="dark"] .toolbar{background:#101521ed;border-color:var(--line)}
+:root[data-theme="dark"] .search,
+:root[data-theme="dark"] button,
+:root[data-theme="dark"] .filter,
+:root[data-theme="dark"] .topic,
+:root[data-theme="dark"] .resource{background:#171f2e;color:var(--ink);border-color:var(--line)}
+:root[data-theme="dark"] .filter.active{background:#25365f;border-color:#465f9d;color:#c7d4ff}
+:root[data-theme="dark"] .content{border-color:#263145}
+:root[data-theme="dark"] .num{background:#25365f;color:#c7d4ff}
+:root[data-theme="dark"] .track{background:#2a3447}
+:root[data-theme="dark"] .note{background:#302817;border-color:#66512b;color:#f0d99f}
+:root[data-theme="dark"] a{color:#9db5ff}
+:root[data-theme="dark"] .pill{background:#25365f;color:#c7d4ff}
+:root[data-theme="dark"] button:hover,
+:root[data-theme="dark"] .filter:hover{background:#202b3e;border-color:#52617b}
+
+
+/* Neo-brutalist visual layer */
+:root{
+ --bg:#f4f1e8;--panel:#fffdf6;--ink:#171717;--muted:#55514a;--line:#171717;
+ --blue:#ff5a36;--blue2:#ffe0d5;--green:#16865b;
+ --shadow:5px 5px 0 #171717
+}
+body{font-family:Arial,Helvetica,sans-serif;letter-spacing:-.015em}
+.top{background:#f7d84a;border-bottom:3px solid #171717}
+.wrap{padding-top:25px;padding-bottom:30px}
+.brand{font-weight:950;letter-spacing:-.07em;text-transform:uppercase}
+.pill{background:#171717;color:#fff;border:2px solid #171717;border-radius:0;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+h1{font-weight:950;letter-spacing:-.075em;text-transform:uppercase;max-width:850px}
+.lead{color:#29251e;font-weight:600}
+.stats{gap:14px}
+.stat{background:#fffdf6;border:2px solid #171717;border-radius:0;box-shadow:4px 4px 0 #171717}
+.stat strong{font-weight:950}
+.toolbar{background:#f4f1e8f2;border-bottom:2px solid #171717}
+.search{border:2px solid #171717;border-radius:0;box-shadow:3px 3px 0 #171717;font-weight:700}
+button,.filter{border:2px solid #171717;border-radius:0;box-shadow:3px 3px 0 #171717;font-weight:900;text-transform:uppercase;letter-spacing:.035em}
+button:active,.filter:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #171717}
+.filter.active{background:#ff5a36;color:#171717;border-color:#171717}
+.progressbox{background:#fffdf6;border:2px solid #171717;border-radius:0;box-shadow:5px 5px 0 #171717}
+.track{height:13px;background:#e3ded1;border:2px solid #171717;border-radius:0}
+.bar{background:#ff5a36;border-radius:0}
+.phase{border:2px solid #171717;border-radius:0;box-shadow:5px 5px 0 #171717}
+.phasehead{padding:18px 19px}
+.num{background:#ff5a36;color:#171717;border:2px solid #171717;border-radius:0;font-weight:950}
+.phasetitle{font-weight:950;text-transform:uppercase;letter-spacing:-.045em}
+.chev{font-weight:950;color:#171717}
+.content{border-top:2px solid #171717}
+.topic{border:2px solid #171717;border-radius:0;box-shadow:3px 3px 0 #171717}
+.topic input{accent-color:#ff5a36}
+.topic label{font-weight:900;letter-spacing:-.025em}
+.links a{font-weight:900;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.resource{border:2px solid #171717;border-radius:0;box-shadow:4px 4px 0 #171717}
+.resource b{font-weight:950;text-transform:uppercase;letter-spacing:-.025em}
+.note{background:#f7d84a;border:2px solid #171717;border-radius:0;box-shadow:4px 4px 0 #171717;color:#171717;font-weight:650}
+footer{font-weight:700}
+a{color:#c83b20}
+a:hover{color:#7c1d0d}
+:root[data-theme="dark"]{
+ --bg:#171717;--panel:#242424;--ink:#f7f2e8;--muted:#c2bbae;--line:#f7f2e8;
+ --blue:#ff7657;--blue2:#54291f;--green:#54c99a;--shadow:5px 5px 0 #ff7657
+}
+:root[data-theme="dark"] .top{background:#272727;border-color:#f7d84a}
+:root[data-theme="dark"] .lead{color:#e3dccf}
+:root[data-theme="dark"] .stat{background:#242424;border-color:#f7f2e8;box-shadow:4px 4px 0 #f7d84a}
+:root[data-theme="dark"] .toolbar{background:#171717ed;border-color:#f7f2e8}
+:root[data-theme="dark"] .search,
+:root[data-theme="dark"] button,
+:root[data-theme="dark"] .filter,
+:root[data-theme="dark"] .topic,
+:root[data-theme="dark"] .resource{background:#242424;color:#f7f2e8;border-color:#f7f2e8;box-shadow:3px 3px 0 #f7d84a}
+:root[data-theme="dark"] .filter.active{background:#ff7657;color:#171717;border-color:#f7f2e8}
+:root[data-theme="dark"] .phase{background:#242424;border-color:#f7f2e8;box-shadow:5px 5px 0 #f7d84a}
+:root[data-theme="dark"] .content{border-color:#f7f2e8}
+:root[data-theme="dark"] .num{background:#ff7657;color:#171717;border-color:#f7f2e8}
+:root[data-theme="dark"] .chev{color:#f7f2e8}
+:root[data-theme="dark"] .track{background:#393939;border-color:#f7f2e8}
+:root[data-theme="dark"] .note{background:#f7d84a;border-color:#f7f2e8;color:#171717}
+:root[data-theme="dark"] a{color:#ff9a80}
+:root[data-theme="dark"] .pill{background:#f7d84a;color:#171717;border-color:#f7d84a}
+:root[data-theme="dark"] button:hover,
+:root[data-theme="dark"] .filter:hover{background:#383838}
+@media(max-width:760px){
+ .stat,.progressbox,.phase,.topic,.resource,.note{box-shadow:3px 3px 0 #171717}
+ :root[data-theme="dark"] .stat,
+ :root[data-theme="dark"] .progressbox,
+ :root[data-theme="dark"] .phase,
+ :root[data-theme="dark"] .topic,
+ :root[data-theme="dark"] .resource{box-shadow:3px 3px 0 #f7d84a}
+}
+
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <div class="nav"><div class="brand">LEARN / CYBER</div><span class="pill">FREE LEARNING TRACK</span></div>
+  <div class="nav"><div class="brand">LEARN / CYBER</div><div style="display:flex;align-items:center;gap:10px"><span class="pill">FREE LEARNING TRACK</span><button id="themeBtn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾ Dark</button></div></div>
   <h1>Cybersecurity, step by step.</h1>
   <p class="lead">An interactive roadmap based on your uploaded cybersecurity roadmap. Learn the foundations first, practise in legal labs, and track your progress as you go.</p>
   <div class="stats">
@@ -88,6 +185,11 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:28px 15px}
 </main>
 <footer>Progress is saved in this browser using local storage. No account or server is required.</footer>
 <script>
+(function(){
+  const savedTheme = localStorage.getItem('cyber-roadmap-theme');
+  const preferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.dataset.theme = savedTheme || preferred;
+})();
 const phases = [
 {title:"IT fundamentals",hint:"Understand computers before securing them.",topics:[
 ["Computer hardware components","CPU, RAM, storage, motherboard, peripherals and how components interact.",[["Professor Messer A+","https://www.professormesser.com/"]]],
@@ -224,6 +326,19 @@ document.getElementById('search').addEventListener('input',applyFilter);
 let expanded=false;document.getElementById('expandBtn').addEventListener('click',()=>{expanded=!expanded;document.querySelectorAll('.phase').forEach(x=>{if(!x.classList.contains('hidden'))x.open=expanded});document.getElementById('expandBtn').textContent=expanded?'Collapse all':'Expand all'});
 document.getElementById('resetBtn').addEventListener('click',()=>{if(confirm('Reset all saved roadmap progress on this browser?')){saved={};localStorage.removeItem(storageKey);document.querySelectorAll('.topic input').forEach(x=>x.checked=false);update()}});
 update();
+const themeBtn = document.getElementById('themeBtn');
+function syncThemeButton(){
+  const dark = document.documentElement.dataset.theme === 'dark';
+  themeBtn.textContent = dark ? '☀ Light' : '☾ Dark';
+  themeBtn.setAttribute('aria-pressed', String(dark));
+}
+syncThemeButton();
+themeBtn.addEventListener('click',()=>{
+  const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem('cyber-roadmap-theme', next);
+  syncThemeButton();
+});
 </script>
 </body>
 </html>
